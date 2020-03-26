@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root
+{
+  --background-image-url: url("../img/bg_default.jpg");
+  --bottom-colour: var(--main-neutral-colour);
+  --bottom-right-background-colour: var(--main-neutral-colour);
+  --middle-div-height: 30em;
+}
+
+.main_company_button
+{
+  margin-left: 21.5%;
+  margin-top: 1em;
+  background-color: white;
+  border: none;  
+  color: var(--main-dark-colour);
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;  
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+a.main_company_button:hover
+{
+  background-color: var(--main-bright-colour);
+}

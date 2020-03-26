@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="res/css/ss.css"/>  
+    <link type="text/css" rel="stylesheet" href="res/css/contact_us.css"/>  
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>      
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>    
+    <script type="text/javascript">
+      (function(){
+        //emailjs.init("user_jW6DTEfNI3qlWYQ4qoJiF");
+        emailjs.init("user_aK4e4NOF6Q4VXp3R2gzyu");
+      })();            
+    </script>    
+    <script type="text/javascript">      
+        window.onload = function() {
+            document.getElementById('contact_form').addEventListener('submit', function(event) {                
+                event.preventDefault();                
+                var result = emailjs.sendForm('outlook', 'futuracontactus', this);                
+            });
+        }              
+    </script>        
+    <title>Futura Farms</title>
+  </head>
+
+  <body>
+    <div class="background">    
+      <div class="topbanner">
+        <div class="topleft">
+          <div class="topleftbanner">          
+            <div class="companynamemedium">Futura Farms</div>
+            <div class="companyaddressmedium">St. Andrews, MB</div>
+          </div>
+        </div>			
+        <div class="topright">                
+            <nav>        
+              <ul id="navbar">                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="wholesale_fruit.html">Wholesale Fruit</a></li>   
+                <li><a href="wholesale_seed.html">Wholesale Seed</a></li>						
+                <li><a href="research.html">Research</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><span class="current_page_link">Contact Us</span></li>
+              </ul>
+            </nav>                  
+        </div>
+      </div>
+
+
+      <div class="middle">
+        <div class="main_company_name"> </div>
+        <div class="main_company_logo">Contact Us</div>        
+      </div>
+      <div class="bottom">                
+        <div class="contact_form_container">          
+          <form id="contact_form">
+            <div class="form_grid">
+              <div class="form_header">For all Inquiries Feel Free to Contact Us</div>
+              <div class="form_fn">
+                <label id="fn_label" for="fn">Enter Your First Name *</label>
+                <input id="fn" name="fn" type="text" placeholder="First Name"/>
+              </div>
+              <div class="form_ln">
+                <label id="ln_label" for="ln">Enter Your Last Name (optional)</label>
+                <input id="ln" name="ln" type="text" placeholder="Last Name"/>
+              </div>
+              <div class="form_em">
+                <label id="em_label" for="em">Enter Your Email *</label>
+                <input id="em" name="em" type="text" placeholder="Email"/>
+              </div>
+              <div class="form_tel">
+                <label id="tel_label" for="tel">Enter Your Phone # (optional)</label>
+                <input id="tel" name="tel" type="text" placeholder="Phone"/>
+              </div>
+              <div class="form_msg">
+                <label id="msg_label" for="msg">Type Your Message Here</label>
+                <textarea id="msg" name="msg" placeholder="Message"></textarea>
+              </div>
+              <div class="form_btn">                
+                <input type="submit" value="Submit" class="submit_btn"/>
+              </div>
+            </div>                    
+          </form>
+        </div>
+      </div>
+      
+      
+      <div class="bottom_banner">
+        <div class="bottom_banner_left">© 2020 by Futura Farms.</div>
+        <div class="bottom_banner_right"><i class='fab fa-instagram'></i></div>
+      </div>
+    </div>
+  </body>
+
+</html>

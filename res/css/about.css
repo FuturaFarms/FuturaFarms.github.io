@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root
+{  
+  --background-image-url: url("../img/bg_about.jpg");
+  --bottom-colour: var(--main-neutral-colour);
+  --bottom-right-background-colour: var(--main-dark-colour);
+  --middle-div-height: 30em;
+}
+

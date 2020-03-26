@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face 
+{
+  font-family: FuturaMuseo300;
+  src:url("../fonts/Museo300-Regular.otf");
+}
+
+@font-face 
+{
+  font-family: FuturaMuseo700;
+  src:url("../fonts/Museo700-Regular.otf");
+}
+
+@font-face 
+{
+  font-family: RalewayRegular;
+  src:url("../fonts/Raleway-Regular.ttf");
+}
+
+:root
+{
+  --main-bright-colour: #fe8340;
+  --main-dark-colour: #293e31;
+  --main-neutral-colour: #fcf9f4;
+}
+
+body
+{    
+  font-family: FuturaMuseo700, serif;
+  margin: 0%;
+}
+
+ul #navbar
+{
+  list-style-type: none;
+}
+
+nav
+{  
+  white-space: nowrap;
+}
+
+#navbar li
+{
+  display: inline-block;	
+  margin-right: 30px;
+  white-space: nowrap;
+  float: none;
+  text-align: center;
+  font-size: 0.85em;  
+  letter-spacing: 1.5px;  
+  font-style: normal;	
+}
+
+#navbar li a
+{  
+  text-decoration: none;	
+  color: white;
+}
+
+#navbar li a:hover
+{
+  color: var(--main-bright-colour);
+}
+
+#navbar li span
+{
+  color: var(--main-bright-colour);
+}
+
+div.background
+{  
+  background: var(--background-image-url);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;    
+  width: calc(100% - 0px);  
+  min-width: 1100px;
+}
+
+.main_company_name
+{
+  margin-left: 20%;
+  margin-top: 5%;
+  color: white;
+  font-size: 7em;
+  white-space: pre;
+}
+
+.main_company_logo
+{
+  margin-left: 23%;
+  color: white;
+  font-size: 3em;
+}
+
+div.topbanner
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+div.topleftbanner
+{
+  display: grid;    
+  margin-left: 5%;  
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+.companynamemedium
+{
+  font-size: 2em;
+  color: var(--main-dark-colour);
+}
+
+.companyaddressmedium
+{
+  font-size: 1em;
+  color: var(--main-dark-colour);
+}
+
+div.topleft
+{  
+  display: grid;
+  align-items: center;
+  background-color: var(--main-bright-colour);
+  height: 100px;  
+  width: 30%;
+  min-width: 300px;  
+  clear: left;  
+}
+
+div.topright
+{
+  display: inline-flex;  
+  background-color: var(--main-dark-colour);
+  height: 100px;  
+  width: 70%;  
+  min-width: 800px;    
+  justify-content: right;
+  align-items: center;
+  text-align: end;  
+  clear: right;  
+}
+
+div.middle
+{  
+  display: block;	
+  height: var(--middle-div-height);
+  width: 100%;  
+  min-width: 1100px;  
+}
+
+div.bottom
+{    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;  
+  background-color: var(--bottom-colour);  
+  min-width: 1100px;    
+}
+
+div.bottom_left
+{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;    
+  padding-bottom: 2%;
+  width: 50%;
+  line-height: 1.6;
+  word-spacing: 0.25em;
+}
+
+div.bottom_right
+{
+  width: 60%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: middle;
+  background-color: var(--bottom-right-background-colour);
+}
+
+.bottom_banner_left
+{
+  font-size: 1em;
+  align-self: center;
+  justify-self: right;
+  padding-right: 10%;
+}
+
+.bottom_banner_right
+{      
+  font-size: 3em;
+  align-self: center;
+  justify-self: left;
+  padding-left: 10%;
+}
+
+div.bottom_banner
+{  
+  display: grid;
+  grid-template-areas: "bottom_banner_left bottom_banner_right";
+  background-color: var(--main-dark-colour);
+  color: var(--main-bright-colour);  
+  height: 5em;  
+  border-top-style: solid;
+  border-top-color: #c7c7c7;
+  border-top-width: thick;
+}
+
+.main_company_ethos
+{    
+  font-size: 2em;
+  color: var(--main-dark-colour);  
+  white-space: nowrap;
+}
+
+div.line
+{
+  border-width: thin;
+  border-color: var(--main-dark-colour);
+  border-style: solid;
+  margin-top: 1em;
+  width: 5em;
+}
+
+div.story
+{
+  font-size: normal;
+  color: var(--main-dark-colour);
+  margin-top: 1em;
+  font-family: RalewayRegular;
+}

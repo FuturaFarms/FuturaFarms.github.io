@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root
+{  
+  --background-image-url: url("../img/bg_contact_us.jpg");
+  --bottom-colour: var(--main-dark-colour);
+  --bottom-right-background-colour: var(--main-dark-colour);
+  --middle-div-height: 30em;
+}
+
+.submit_btn
+{    
+  font-size: 1.5em;
+  background-color: var(--main-bright-colour);
+  border: none;  
+  color: var(--main-dark-colour);          
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  padding: 0.4em 1em;
+}
+
+.submit_btn:hover
+{
+  background-color: var(--main-dark-colour);
+  color: white;
+}
+
+.contact_form_container
+{
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.form_header
+{
+  grid-area: header;
+  font-size: 2.5em;
+}
+
+.form_fn
+{
+  grid-area: fn;
+}
+
+.form_ln
+{
+  grid-area: ln;
+}
+
+.form_em
+{
+  grid-area: em;
+}
+
+.form_tel
+{
+  grid-area: tel;
+}
+
+.form_msg
+{
+  grid-area: msg;
+}
+
+.form_btn
+{
+  grid-area: btn;
+  align-self: center;
+  justify-self: center;
+}
+
+div.form_grid
+{  
+  color: var(--main-bright-colour);
+  display: grid;
+	height: auto;
+	width: 100%;
+	min-height: auto;		
+  grid-template-areas:
+    "header header"    
+    "fn ln"
+    "em tel"
+    "msg msg"
+    "btn btn";
+  grid-row-gap: 1em;
+  grid-column-gap: 2em;
+  justify-items: stretch;
+}
+
+form label
+{
+  font-family: RalewayRegular;
+}
+
+form input, textarea
+{  
+  display: block;
+  border: medium solid var(--main-bright-colour);
+  background-color: var(--main-dark-colour);
+  color: var(--main-bright-colour);      
+  font-family: RalewayRegular;
+  padding: 5px;
+}
+
+form input
+{
+  height: 2em;
+  width: 100%;
+}
+
+form textarea
+{
+  height: 10em;
+  width: 100%;
+}
