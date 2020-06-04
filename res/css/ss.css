@@ -234,3 +234,8 @@ div.story
   margin-top: 1em;
   font-family: RalewayRegular;
 }
+
+a i 
+{
+  color: var(--main-bright-colour);
+}
