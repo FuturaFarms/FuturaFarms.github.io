@@ -4,10 +4,15 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
     <link type="text/css" rel="stylesheet" href="res/css/ss.css"/>  
     <link type="text/css" rel="stylesheet" href="res/css/contact_us.css"/>  
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>      
+    <script src='res/script/contact_us.js'></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>    
     <script type="text/javascript">
       (function(){
@@ -15,11 +20,17 @@
         emailjs.init("user_aK4e4NOF6Q4VXp3R2gzyu");
       })();            
     </script>    
-    <script type="text/javascript">      
+    <script type="text/javascript">                    
         window.onload = function() {
             document.getElementById('contact_form').addEventListener('submit', function(event) {                
                 event.preventDefault();                
-                var result = emailjs.sendForm('outlook', 'futuracontactus', this);                
+                
+                if ( ValidateForm() )
+                {
+                  var result = emailjs.sendForm('outlook', 'futuracontactus', this);                
+                  $('.toast').toast('show'); 
+                  ClearForm();
+                }                
             });
         }              
     </script>        
@@ -57,33 +68,47 @@
         <div class="main_company_name"> </div>
         <div class="main_company_logo">Contact Us</div>        
       </div>
-      <div class="bottom">                
+      <div class="bottom">                                                            
+        
         <div class="contact_form_container">          
           <form id="contact_form">
             <div class="form_grid">
               <div class="form_header">For all Inquiries Feel Free to Contact Us</div>
               <div class="form_fn">
                 <label id="fn_label" for="fn">Enter Your First Name *</label>
-                <input id="fn" name="fn" type="text" placeholder="First Name"/>
+                <input id="fn" name="fn" type="text" placeholder="First Name" class="valid_input_class"/>
               </div>
               <div class="form_ln">
                 <label id="ln_label" for="ln">Enter Your Last Name (optional)</label>
-                <input id="ln" name="ln" type="text" placeholder="Last Name"/>
+                <input id="ln" name="ln" type="text" placeholder="Last Name" class="valid_input_class"/>
               </div>
               <div class="form_em">
                 <label id="em_label" for="em">Enter Your Email *</label>
-                <input id="em" name="em" type="text" placeholder="Email"/>
+                <input id="em" name="em" type="text" placeholder="Email" class="valid_input_class"/>
               </div>
               <div class="form_tel">
                 <label id="tel_label" for="tel">Enter Your Phone # (optional)</label>
-                <input id="tel" name="tel" type="text" placeholder="Phone"/>
+                <input id="tel" name="tel" type="text" placeholder="Phone" class="valid_input_class"/>
               </div>
               <div class="form_msg">
-                <label id="msg_label" for="msg">Type Your Message Here</label>
-                <textarea id="msg" name="msg" placeholder="Message"></textarea>
+                <label id="msg_label" for="msg">Type Your Message Here *</label>
+                <textarea id="msg" name="msg" placeholder="Message" class="valid_input_class"></textarea>
               </div>
               <div class="form_btn">                
                 <input type="submit" value="Submit" class="submit_btn"/>
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="position: relative;" data-delay="5000">
+                  <div class="toast-header">
+                    <!--<img src="..." class="rounded mr-2" alt="...">-->
+                    <strong class="mr-auto">Futura Farms</strong>
+                    <small></small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="toast-body">
+                    Thank you for contacting us!
+                  </div>
+                </div>
               </div>
             </div>                    
           </form>
@@ -100,6 +125,11 @@
         </div>
       </div>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 
 </html>
