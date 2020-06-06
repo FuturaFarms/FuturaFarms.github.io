@@ -95,12 +95,21 @@ form label
 
 form input, textarea
 {  
-  display: block;
-  border: medium solid var(--main-bright-colour);
+  display: block;  
   background-color: var(--main-dark-colour);
   color: var(--main-bright-colour);      
   font-family: RalewayRegular;
   padding: 5px;
+}
+
+.valid_input_class
+{
+  border: medium solid var(--main-bright-colour);
+}
+
+.invalid_input_class
+{
+  border: medium solid red;
 }
 
 form input
