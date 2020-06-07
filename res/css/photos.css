@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 :root
@@ -7,6 +7,20 @@
   --bottom-colour: var(--main-neutral-colour);
   --bottom-right-background-colour: var(--main-dark-colour);
   --middle-div-height: auto;
+  --bottom-grid-template_columns: 60% auto;
+}
+
+/* 
+  div.background has to be duplicated in each CSS file due to the fact that some browsers can't resolve
+  variables with relative URLs
+*/
+div.background 
+{
+  background-image: url(../img/bg_photos.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: calc(100% - 0px);
 }
 
 .row
@@ -15,9 +29,9 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20em;
-  margin-left: 15em;
-  margin-right: 15em;
+  margin-top: 3vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   margin-bottom: 2%;
 }
 
@@ -33,4 +47,5 @@
 {
   opacity: 0.8;
 }
+
 
