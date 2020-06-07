@@ -113,6 +113,15 @@ div.topleft div.dropdown
   }
 }
 
+@media screen and (max-width: 400px)
+{
+  div.topleft 
+  {
+    text-align: left;
+    position: relative;
+  }
+}
+
 /* nav */
 .topnav 
 {
