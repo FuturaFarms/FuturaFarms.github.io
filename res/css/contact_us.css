@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 :root
@@ -6,7 +6,8 @@
   --background-image-url: url("../img/bg_contact_us.jpg");
   --bottom-colour: var(--main-dark-colour);
   --bottom-right-background-colour: var(--main-dark-colour);
-  --middle-div-height: 30em;
+  --middle-div-height: 50vh;
+  --bottom-grid-template_columns: 100%;
 }
 
 .submit_btn
@@ -26,7 +27,7 @@
 }
 
 .contact_form_container
-{
+{  
   margin: auto;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -75,8 +76,7 @@ div.form_grid
   color: var(--main-bright-colour);
   display: grid;
 	height: auto;
-	width: 100%;
-	min-height: auto;		
+	width: 100%;	
   grid-template-areas:
     "header header"    
     "fn ln"
@@ -86,6 +86,23 @@ div.form_grid
   grid-row-gap: 1em;
   grid-column-gap: 2em;
   justify-items: stretch;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+@media screen and (max-width: 500px)
+{
+  div.form_grid
+  {
+    grid-template-areas:
+    "header"    
+    "fn"
+    "ln"
+    "em"
+    "tel"
+    "msg"
+    "btn";
+  }
 }
 
 form label

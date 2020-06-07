@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 :root
@@ -6,7 +6,8 @@
   --background-image-url: url("../img/bg_research.jpg");
   --bottom-colour: var(--main-neutral-colour);
   --bottom-right-background-colour: var(--main-dark-colour);
-  --middle-div-height: 30em;
+  --middle-div-height: 50vh;
+  --bottom-grid-template_columns: 60% auto;
 }
 
 
