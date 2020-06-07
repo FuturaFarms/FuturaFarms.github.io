@@ -31,6 +31,7 @@ div.background
   }
 }
 
+/*
 @media screen and (max-width: 500px) 
 {
   div.background
@@ -38,6 +39,7 @@ div.background
     background-image: url(../img/bg_contact_us_small.png);
   }
 }
+*/
 
 .submit_btn
 {    
