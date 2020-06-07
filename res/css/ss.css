@@ -49,14 +49,14 @@ div.topbanner
 {
   display: grid;
   grid-template-columns: 22% auto;
+  height: 15vh;
 }
 
 div.topleft
 {  
   display: grid;
   align-items: center;
-  background-color: var(--main-bright-colour);
-  height: 10vh;      
+  background-color: var(--main-bright-colour);        
   padding-left: 1vw;
   letter-spacing: 0.05em;
   font-weight: 400;
@@ -65,8 +65,7 @@ div.topleft
 div.topright
 {  
   display: grid;
-  background-color: var(--main-dark-colour);
-  height: 10vh;
+  background-color: var(--main-dark-colour);  
   justify-content: right;
   align-items: center;
   text-align: end;      
