@@ -97,6 +97,11 @@ div.topleft div.dropdown
     display: block;
   }
 
+  #dropdownMenuButton, #menubtn 
+  {
+    background-color: var(--main-dark-colour) !important;
+  }
+
   div.dropdown-menu 
   {
     background-color: var(--main-dark-colour) !important;
