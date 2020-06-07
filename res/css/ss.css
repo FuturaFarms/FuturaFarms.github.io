@@ -34,14 +34,10 @@ body
 
 
 
-div.background
-{  
-  background: var(--background-image-url);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;    
-  width: calc(100% - 0px);    
-}
+/* 
+  div.background has to be duplicated in each CSS file due to the fact that some browsers can't resolve
+  variables with relative URLs
+*/
 
 
 /* top section */

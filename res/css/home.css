@@ -3,11 +3,24 @@
 
 :root
 {
-  --background-image-url: url("../img/bg_default.jpg");
+  --background-image-url: url(../img/bg_default.jpg);
   --bottom-colour: var(--main-neutral-colour);
   --bottom-right-background-colour: var(--main-neutral-colour);
   --middle-div-height: 50vh;  
   --bottom-grid-template_columns: 60% auto;
+}
+
+/* 
+  div.background has to be duplicated in each CSS file due to the fact that some browsers can't resolve
+  variables with relative URLs
+*/
+div.background 
+{
+  background-image: url(../img/bg_default.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: calc(100% - 0px);
 }
 
 .main_company_button
@@ -30,3 +43,5 @@ a.main_company_button:hover
 {
   background-color: var(--main-bright-colour);
 }
+
+

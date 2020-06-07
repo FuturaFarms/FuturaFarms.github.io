@@ -10,6 +10,19 @@
   --bottom-grid-template_columns: 100%;
 }
 
+/* 
+  div.background has to be duplicated in each CSS file due to the fact that some browsers can't resolve
+  variables with relative URLs
+*/
+div.background 
+{
+  background-image: url(../img/bg_contact_us.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: calc(100% - 0px);
+}
+
 .submit_btn
 {    
   font-size: 1.5em;

@@ -10,4 +10,17 @@
   --bottom-grid-template_columns: 60% auto;
 }
 
+/* 
+  div.background has to be duplicated in each CSS file due to the fact that some browsers can't resolve
+  variables with relative URLs
+*/
+div.background 
+{
+  background-image: url(../img/bg_wholesale_fruit.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: calc(100% - 0px);
+}
+
 
