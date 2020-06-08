@@ -66,4 +66,10 @@ div.background
   opacity: 0.8;
 }
 
+.carousel_caption_bg 
+{
+  /* this is the RGB value of --main-dark-colour */
+  background-color: rgba(41, 62, 49, 0.4);
+}
+
 
