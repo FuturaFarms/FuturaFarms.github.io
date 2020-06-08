@@ -3,7 +3,7 @@
 
 :root
 {
-  --background-image-url: url(../img/bg_default.jpg);
+  --background-image-url: url(../img/bg_default.png);
   --bottom-colour: var(--main-neutral-colour);
   --bottom-right-background-colour: var(--main-neutral-colour);
   --middle-div-height: 50vh;  
@@ -16,12 +16,30 @@
 */
 div.background 
 {
-  background-image: url(../img/bg_default.jpg);
+  background-image: url(../img/bg_default.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: calc(100% - 0px);
 }
+
+@media screen and (max-width: 1000px) 
+{
+  div.background
+  {
+    background-image: url(../img/bg_default_medium.png);
+  }
+}
+
+/*
+@media screen and (max-width: 500px) 
+{
+  div.background
+  {
+    background-image: url(../img/bg_default_small.png);
+  }
+}
+*/
 
 .main_company_button
 {
