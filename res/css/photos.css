@@ -48,16 +48,16 @@ div.background
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 3vw;
-  margin-left: 4vw;
-  margin-right: 4vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   margin-bottom: 2%;
 }
 
 .row img
 {
-  width: 30%;
+  width: 28vw;
   vertical-align: middle;
-  padding: 1%;
+  padding: 1vw;
   object-fit: contain;  
 }
 
