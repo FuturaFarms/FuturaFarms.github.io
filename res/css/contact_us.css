@@ -70,6 +70,10 @@ div.background
   font-size: 2.5em;
 }
 
+.form_info {
+  grid-area: info;
+}
+
 .form_fn
 {
   grid-area: fn;
@@ -110,6 +114,7 @@ div.form_grid
 	width: 100%;	
   grid-template-areas:
     "header header"    
+    "info info"
     "fn ln"
     "em tel"
     "msg msg"
@@ -127,6 +132,7 @@ div.form_grid
   {
     grid-template-areas:
     "header"    
+    "info"
     "fn"
     "ln"
     "em"
