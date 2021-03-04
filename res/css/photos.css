@@ -66,6 +66,23 @@ div.background
   opacity: 0.8;
 }
 
+div table tr td img {
+  width: 28vw;
+  vertical-align: middle;
+  padding: 1vw;
+  object-fit: contain;
+}
+
+div table tr td img:hover 
+{
+  opacity: 0.8;
+}
+
+.centred_table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .carousel_caption_bg 
 {
   /* this is the RGB value of --main-dark-colour */
