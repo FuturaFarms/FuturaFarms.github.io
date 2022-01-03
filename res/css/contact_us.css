@@ -23,7 +23,7 @@ div.background
   width: calc(100% - 0px);
 }
 
-@media screen and (max-width: 1000px) 
+@media screen and (max-width: 1500px) 
 {
   div.background
   {
@@ -32,7 +32,7 @@ div.background
 }
 
 /*
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 1000px) 
 {
   div.background
   {
